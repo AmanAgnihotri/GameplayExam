@@ -18,5 +18,10 @@ namespace Exam.ShortestPath
     {
       return string.Format ("[{0}, ({1}, {2})]", Name, Position.x, Position.y);
     }
+
+    public static IVertex Create (string name, float x, float y)
+    {
+      return new Vertex (name, new Vector2 (x, y));
+    }
   }
 }
