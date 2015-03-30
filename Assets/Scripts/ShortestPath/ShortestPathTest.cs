@@ -26,6 +26,20 @@ namespace Exam.ShortestPath
         .AddEdge (vertexD, vertexE)
         .AddEdge (vertexD, vertexF)
         .Build ();
+
+      var path = ShortestPath.FindPath (graph, vertexA, vertexF);
+
+      if (path != null)
+      {
+        foreach (var vertex in path)
+        {
+          Debug.Log (vertex);
+        }
+      }
+      else
+      {
+        Debug.Log ("No Path Found");
+      }
     }
   }
 }
