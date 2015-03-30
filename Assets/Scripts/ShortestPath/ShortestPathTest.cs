@@ -6,12 +6,12 @@ namespace Exam.ShortestPath
   {
     public void Start ()
     {
-      IVertex vertexA = new Vertex ("A", new Vector2 (0, 0));
-      IVertex vertexB = new Vertex ("B", new Vector2 (1, 2));
-      IVertex vertexC = new Vertex ("C", new Vector2 (3, 4));
-      IVertex vertexD = new Vertex ("D", new Vector2 (2, 1));
-      IVertex vertexE = new Vertex ("E", new Vector2 (4, 1));
-      IVertex vertexF = new Vertex ("F", new Vector2 (5, 3));
+      var vertexA = Vertex.Create ("A", 0, 0);
+      var vertexB = Vertex.Create ("B", 1, 2);
+      var vertexC = Vertex.Create ("C", 3, 4);
+      var vertexD = Vertex.Create ("D", 2, 1);
+      var vertexE = Vertex.Create ("E", 4, 1);
+      var vertexF = Vertex.Create ("F", 5, 3);
 
       IGraphBuilder graphBuilder = new GraphBuilder ();
 
